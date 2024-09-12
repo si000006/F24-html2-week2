@@ -145,3 +145,47 @@ h4{
 	background:rgba(128,255,128,0.7);
 	color:#030;
 }
+
+/************************************************************
+                    In Class
+************************************************************/
+
+nav ul {
+    display: flex;
+    /* flex direction changes the order of the objects
+    default is row- row-reverse is backwards horizontal
+    column will stack vertically - column-reverse will */
+    flex-direction: row;
+
+    /* two values mean */
+    padding: 10px 0;
+
+    /* justify content position the content along the main axis */
+    /* justify-content: space-evenly; */
+
+    height: 30px;
+
+    /* align-items: center; */
+
+
+}
+
+
+
+nav ul li {
+    background-color: black;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+nav ul li a {
+    /* in default links are inline meaning you can not change the width
+    change them into block element to set a width */
+    display: block;
+    text-align: center;
+    height: 10px;
+}
+
+nav ul li a:hover {
+    
+}
